@@ -16,12 +16,6 @@ namespace AlbumCollection.Controllers
             this.songRepo = songRepo;
         }
 
-        //public ViewResult Index()
-        //{
-        //    var model = songRepo.GetAll();
-        //    return View(model);
-        //}
-
         [HttpGet]
         public ViewResult Create(int id)
         {

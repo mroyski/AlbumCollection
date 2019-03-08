@@ -122,6 +122,125 @@ namespace AlbumCollection
                     SongId = 11,
                     Name = "Goodnight Ladies",
                     AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 12,
+                    Name = "Ghost of Perdition",
+                    AlbumId = 2
+                },
+
+                new Song()
+                {
+                    SongId = 13,
+                    Name = "The Baying of the Hounds",
+                    AlbumId = 2
+                },
+
+                new Song()
+                {
+                    SongId = 14,
+                    Name = "Beneath the Mire",
+                    AlbumId = 2
+                },
+
+                new Song()
+                {
+                    SongId = 15,
+                    Name = "Atonement",
+                    AlbumId = 2
+                },
+
+                new Song()
+                {
+                    SongId = 16,
+                    Name = "Reverie/Harlequin Forest",
+                    AlbumId = 2
+                },
+
+                new Song()
+                {
+                    SongId = 17,
+                    Name = "Hours of Wealth",
+                    AlbumId = 2
+                },
+
+                new Song()
+                {
+                    SongId = 18,
+                    Name = "The Grand Conjuration",
+                    AlbumId = 2
+                },
+
+                new Song()
+                {
+                    SongId = 19,
+                    Name = "Isolation Years",
+                    AlbumId = 2
+                },
+
+                new Song()
+                {
+                    SongId = 20,
+                    Name = "Green River",
+                    AlbumId = 3
+                },
+
+                new Song()
+                {
+                    SongId = 21,
+                    Name = "Commotion",
+                    AlbumId = 3
+                },
+
+                new Song()
+                {
+                    SongId = 22,
+                    Name = "Tombstone Shadow",
+                    AlbumId = 3
+                },
+
+                new Song()
+                {
+                    SongId = 23,
+                    Name = "Wrote a Song for Everyone",
+                    AlbumId = 3
+                },
+
+                new Song()
+                {
+                    SongId = 24,
+                    Name = "Bad Moon Rising",
+                    AlbumId = 3
+                },
+
+                new Song()
+                {
+                    SongId = 25,
+                    Name = "Lodi",
+                    AlbumId = 3
+                },
+
+                new Song()
+                {
+                    SongId = 26,
+                    Name = "Cross-Tie Walker",
+                    AlbumId = 3
+                },
+
+                new Song()
+                {
+                    SongId = 27,
+                    Name = "Sinister Purpose",
+                    AlbumId = 3
+                },
+
+                new Song()
+                {
+                    SongId = 28,
+                    Name = "The Night Time Is the Right Time",
+                    AlbumId = 3
                 });
 
         }
