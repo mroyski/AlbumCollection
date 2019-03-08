@@ -12,5 +12,15 @@
     <title>Details</title>
 </head>
 <body>
+    <h1>@Model.Name</h1>
+    <h2>@Model.ArtistName</h2>
+    <p>
+        <ol>
+        @foreach(var Song in Model.Songs)
+        {
+            <li>@Song.Name</li>
+        }
+            </ol>
+    </p>
 </body>
 </html>

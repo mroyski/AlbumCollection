@@ -22,7 +22,7 @@ namespace AlbumCollection.Repositories
 
         public Album GetById(int id)
         {
-            return db.Albums.Single(Album => Album.Id == id);
+            return db.Albums.Single(Album => Album.AlbumId == id);
         }
     }
 }

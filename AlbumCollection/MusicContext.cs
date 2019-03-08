@@ -22,5 +22,30 @@ namespace AlbumCollection
             base.OnConfiguring(optionsBuilder);
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Album>().HasData(
+                new Album()
+                {
+                    AlbumId = 1,
+                    Name = "Transformer",
+                    ArtistName = "Lou Reed"
+                },
+
+                new Album()
+                {
+                    AlbumId = 2,
+                    Name = "Ghost Reveries",
+                    ArtistName = "Opeth"
+                },
+
+                new Album()
+                {
+                    AlbumId = 3,
+                    Name = "Green River",
+                    ArtistName = "Creedence Clearwater Revival"
+                });
+
+        }
     }
 }

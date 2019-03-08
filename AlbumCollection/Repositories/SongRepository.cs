@@ -28,7 +28,7 @@ namespace AlbumCollection.Repositories
 
         public Song GetById(int id)
         {
-            return db.Songs.Single(s => s.Id == id);
+            return db.Songs.Single(Song => Song.SongId == id);
         }
     }
 }

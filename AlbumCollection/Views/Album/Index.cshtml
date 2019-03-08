@@ -12,5 +12,12 @@
     <title>Index</title>
 </head>
 <body>
+
+    <ul>
+        @foreach(var Album in Model)
+        {
+            <li><a href="/Album/Details/@Album.AlbumId">@Album.Name</a></li>
+        }
+        </ul>
 </body>
 </html>
