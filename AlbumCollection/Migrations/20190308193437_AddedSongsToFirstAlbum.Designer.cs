@@ -3,14 +3,16 @@ using AlbumCollection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AlbumCollection.Migrations
 {
     [DbContext(typeof(MusicContext))]
-    partial class MusicContextModelSnapshot : ModelSnapshot
+    [Migration("20190308193437_AddedSongsToFirstAlbum")]
+    partial class AddedSongsToFirstAlbum
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -57,16 +59,7 @@ namespace AlbumCollection.Migrations
 
                     b.HasData(
                         new { SongId = 1, AlbumId = 1, Name = "Vicious" },
-                        new { SongId = 2, AlbumId = 1, Name = "Andy's Chest" },
-                        new { SongId = 3, AlbumId = 1, Name = "Perfect Day" },
-                        new { SongId = 4, AlbumId = 1, Name = "Hangin' Round" },
-                        new { SongId = 5, AlbumId = 1, Name = "Walk on the Wild Side" },
-                        new { SongId = 6, AlbumId = 1, Name = "Make Up" },
-                        new { SongId = 7, AlbumId = 1, Name = "Satellite of Love" },
-                        new { SongId = 8, AlbumId = 1, Name = "Wagon Wheel" },
-                        new { SongId = 9, AlbumId = 1, Name = "New York Telephone Conversation" },
-                        new { SongId = 10, AlbumId = 1, Name = "I'm So Free" },
-                        new { SongId = 11, AlbumId = 1, Name = "Goodnight Ladies" }
+                        new { SongId = 2, AlbumId = 1, Name = "Andy's Chest" }
                     );
                 });
 

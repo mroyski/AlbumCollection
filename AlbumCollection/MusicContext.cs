@@ -46,6 +46,84 @@ namespace AlbumCollection
                     ArtistName = "Creedence Clearwater Revival"
                 });
 
+            modelBuilder.Entity<Song>().HasData(
+                new Song()
+                {
+                    SongId = 1,
+                    Name = "Vicious",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 2,
+                    Name = "Andy's Chest",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 3,
+                    Name = "Perfect Day",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 4,
+                    Name = "Hangin' Round",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 5,
+                    Name = "Walk on the Wild Side",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 6,
+                    Name = "Make Up",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 7,
+                    Name = "Satellite of Love",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 8,
+                    Name = "Wagon Wheel",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 9,
+                    Name = "New York Telephone Conversation",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 10,
+                    Name = "I'm So Free",
+                    AlbumId = 1
+                },
+
+                new Song()
+                {
+                    SongId = 11,
+                    Name = "Goodnight Ladies",
+                    AlbumId = 1
+                });
+
         }
     }
 }

@@ -15,11 +15,6 @@ namespace AlbumCollection.Repositories
             this.db = db;
         }
 
-        public int Count()
-        {
-            return db.Songs.Count();
-        }
-
         public void Create(Song song)
         {
             db.Songs.Add(song);
