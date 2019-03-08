@@ -15,15 +15,16 @@ namespace AlbumCollection.Repositories
             this.db = db;
         }
 
+        public Song GetById(int id)
+        {
+            return db.Songs.Single(Song => Song.SongId == id);
+        }
+
         public void Create(Song song)
         {
             db.Songs.Add(song);
             db.SaveChanges();
         }
 
-        public Song GetById(int id)
-        {
-            return db.Songs.Single(Song => Song.SongId == id);
-        }
     }
 }

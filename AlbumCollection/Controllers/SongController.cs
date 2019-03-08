@@ -1,4 +1,5 @@
-﻿using AlbumCollection.Repositories;
+﻿using AlbumCollection.Models;
+using AlbumCollection.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,23 @@ namespace AlbumCollection.Controllers
         //    var model = songRepo.GetAll();
         //    return View(model);
         //}
+
+        [HttpGet]
+        public ViewResult Create(int id)
+        {
+            var newSong = new Song()
+            {
+                AlbumId = id
+            };
+            return View(newSong);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Song song)
+        {
+            songRepo.Create(song);
+            return RedirectToAction("../Album/Details/" + song.AlbumId);
+        }
 
         public ViewResult Details(int id)
         {
