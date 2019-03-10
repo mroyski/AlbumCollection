@@ -10,6 +10,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Index</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
 
         @foreach (var Album in Model)
         {
-            <p><a href="/Album/Details/@Album.AlbumId"><img src="@Album.ImgPath" /><br />@Album.Name</a></p>
+            <p><a href="/Album/Details/@Album.AlbumId"><img src="@Album.ImgPath" /><br />@Album.Name<br />By<br />@Album.ArtistName</a></p>
         }
 
     </div>
