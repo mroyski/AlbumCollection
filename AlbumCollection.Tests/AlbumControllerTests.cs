@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace AlbumCollectionTests
+namespace AlbumCollection.Tests
 {
     public class UnitTest1
     {
