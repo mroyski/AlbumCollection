@@ -26,5 +26,13 @@ namespace AlbumCollection.Tests
 
             Assert.Equal(expectedModel, model);
         }
+
+                [Fact]
+        public void Index_Returns_ViewResult()
+        {
+            var result = underTest.Index();
+
+            Assert.IsType<ViewResult>(result);
+        }
     }
 }

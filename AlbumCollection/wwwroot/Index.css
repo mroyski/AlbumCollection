@@ -1,0 +1,36 @@
+﻿*{
+    margin: 0 0 0 0;
+}
+.topNav {
+    text-align: center;
+    background-color: black;
+    padding: 2rem;
+}
+
+.topNav a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+p img {
+    width: 200px;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container p {
+    margin: 0 2rem;
+}
+
+.container a {
+    text-decoration: none;
+}

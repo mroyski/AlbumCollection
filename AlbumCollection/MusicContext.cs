@@ -29,21 +29,24 @@ namespace AlbumCollection
                 {
                     AlbumId = 1,
                     Name = "Transformer",
-                    ArtistName = "Lou Reed"
+                    ArtistName = "Lou Reed",
+                    ImgPath = "/Images/Transformer.jpg"
                 },
 
                 new Album()
                 {
                     AlbumId = 2,
                     Name = "Ghost Reveries",
-                    ArtistName = "Opeth"
+                    ArtistName = "Opeth",
+                    ImgPath = "/Images/Opeth.jpg"
                 },
 
                 new Album()
                 {
                     AlbumId = 3,
                     Name = "Green River",
-                    ArtistName = "Creedence Clearwater Revival"
+                    ArtistName = "Creedence Clearwater Revival",
+                    ImgPath = "/Images/CCR.jpg"
                 });
 
             modelBuilder.Entity<Song>().HasData(

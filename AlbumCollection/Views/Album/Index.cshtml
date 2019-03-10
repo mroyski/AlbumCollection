@@ -9,15 +9,24 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Index.css" rel="stylesheet" />
     <title>Index</title>
 </head>
 <body>
 
-    <ul>
-        @foreach(var Album in Model)
+    <div class="topNav">
+        <a href="/Album/Index">Home</a>
+    </div>
+
+    <h1>Album Collection</h1>
+
+    <div class="container">
+
+        @foreach (var Album in Model)
         {
-            <li><a href="/Album/Details/@Album.AlbumId">@Album.Name</a></li>
+            <p><a href="/Album/Details/@Album.AlbumId"><img src="@Album.ImgPath" /><br />@Album.Name</a></p>
         }
-        </ul>
+
+    </div>
 </body>
 </html>
