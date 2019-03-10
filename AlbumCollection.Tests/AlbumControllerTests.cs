@@ -5,6 +5,8 @@ using NSubstitute;
 using System;
 using System.Collections.Generic;
 using Xunit;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace AlbumCollection.Tests
 {
