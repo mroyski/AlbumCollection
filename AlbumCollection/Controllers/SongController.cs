@@ -33,10 +33,5 @@ namespace AlbumCollection.Controllers
             return RedirectToAction("../Album/Details/" + song.AlbumId);
         }
 
-        public ViewResult Details(int id)
-        {
-            var model = songRepo.GetById(id);
-            return View(model);
-        }
     }
 }
