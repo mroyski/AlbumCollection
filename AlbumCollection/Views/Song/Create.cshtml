@@ -6,30 +6,38 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+<link href="~/Index.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-<h4>Song</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <input asp-for="AlbumId" type="hidden" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </form>
+<body>
+
+    <div class="topNav">
+        <a href="/Album/Index">Home</a>
     </div>
-</div>
 
-<div>
-    <a href="/Album/Details/@Model.AlbumId">Return</a>
-</div>
+    <h2>Create</h2>
 
+    <h4>Song</h4>
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <input asp-for="AlbumId" type="hidden" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Add Song" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a href="/Album/Details/@Model.AlbumId">Return</a>
+    </div>
+</body>

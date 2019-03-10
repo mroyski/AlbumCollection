@@ -30,4 +30,8 @@
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Create.css" />
+  </ItemGroup>
+
 </Project>

@@ -8,23 +8,35 @@
 
 <html>
 <head>
+    <link href="~/Details.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="width=device-width" />
     <title>Details</title>
 </head>
 <body>
+
+    <div class="topNav">
+        <a href="/Album/Index">Home</a>
+    </div>
+
+    <div class="image">
+        <img src="@Model.ImgPath" />
+    </div>
+
     <h1>@Model.Name</h1>
+    <h2>By</h2>
     <h2>@Model.ArtistName</h2>
-    <p>
-        <ol>
-        @foreach(var Song in Model.Songs)
+
+    <ol>
+        @foreach (var Song in Model.Songs)
         {
             <li>@Song.Name</li>
         }
-            </ol>
-    </p>
+    </ol>
 
     <div class="Links">
         <a href="/Song/Create/@Model.AlbumId">Add Song</a>
+        <br />
         <a href="/Album/Index">Return</a>
     </div>
 
