@@ -10,8 +10,8 @@ namespace AlbumCollection.Controllers
 {
     public class SongController : Controller
     {
-        SongRepository songRepo;
-        public SongController(SongRepository songRepo)
+        ISongRepository songRepo;
+        public SongController(ISongRepository songRepo)
         {
             this.songRepo = songRepo;
         }
